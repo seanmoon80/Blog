@@ -1,3 +1,11 @@
-baseURL = "http://seanmoon80.github.com/"
+baseURL = "https://seanmoon80.github.io/"
 languageCode = "en-us"
-title = "I->Playground"
+title = "Playground"
+theme = "hugo-theme-minos"
+staticDir = ["static"]
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = "Posts"
+    url = "/posts/"
