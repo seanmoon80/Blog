@@ -1,7 +1,6 @@
 ---
 title: "Vector Function"
 date: 2019-01-16T21:45:14-05:00
-draft: true
 ---
 
 ## Definition
