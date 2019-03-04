@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Title }}{{ if ne .Title .Site.Title }} // {{ .Site.Title }}{{ end }}</title>
+
+    {{ partial "meta.html" . }}
+    {{ partial "og.html" . }}
+
+    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="{{ "webfonts/ptserif/main.css" | absURL }}" rel='stylesheet' type='text/css'>
+    <link href="{{ "webfonts/source-code-pro/main.css" | absURL }}" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    {{ .Hugo.Generator }}
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
