@@ -30,3 +30,16 @@ f(x,y) &= 2x^2y^3-3x^2y+2x^2+3y^2+1 \newline
 \frac{\partial f}{\partial x} &= 4xy^3 - 6xy + 4x \newline
 \frac{\partial f}{\partial y} &= 6x^2y^2-3x^2+6y
 \end{align}$$
+
+### Ex2
+$$\begin{align}
+f(x,y) &= xe^{xy^2} \newline
+f_{x} &= \frac{\partial}{\partial x}\[x\]e^{xy^2} + x\cdot\frac{\partial}{\partial x}\left[e^{xy^2}\right] \newline
+&= e^{xy^2} + x\cdot e^{xy^2}\cdot\frac{\partial}{\partial x}[xy^2] \newline
+&= e^{xy^2} + x\cdot e^{xy^2}\cdot y^2 \newline
+&= e^{xy^2}(1+xy^2) \newline
+f\_{y} &= x\cdot\frac{\partial}{\partial y}\left[e^{xy^2}\right] \newline
+&= x\cdot e^{xy^2}\cdot\frac{\partial}{\partial y}\left[xy^2\right] \newline
+&= x\cdot e^{xy^2}\cdot 2xy \newline
+&= 2x^2ye^{xy^2}
+\end{align}$$
