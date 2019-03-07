@@ -43,3 +43,54 @@ f\_{y} &= x\cdot\frac{\partial}{\partial y}\left[e^{xy^2}\right] \newline
 &= x\cdot e^{xy^2}\cdot 2xy \newline
 &= 2x^2ye^{xy^2}
 \end{align}$$
+
+### Ex3
+$$\begin{align}
+g(x,y) &= x^2 \cosh{\frac{x}{y}} \newline
+g\_{x} &= 2x\cosh{\frac{x}{y}}+x^2\sinh{\frac{x}{y}}\cdot\frac{1}{y} \newline
+g\_{y} &= x^2\sinh{\frac{x}{y}}\cdot(-\frac{x}{y^2})
+\end{align}$$
+
+### Ex4
+[Quotient Rule](http://tutorial.math.lamar.edu/Classes/CalcI/ProductQuotientRule.aspx)
+$$
+\left(\frac{f}{g}\right)\prime = \frac{f\prime{g} - fg\prime}{g^2}
+$$
+$$\begin{align}
+f(x,y,z,w) &= \frac{xw^2}{y+\sin{(zw)}} \newline
+f\_{x} &= \frac{w^2}{y+\sin{zw}} \newline
+f\_{w} &= \frac{2xw\cdot(y+\sin{zw}) - xw^2\cdot\cos{(zw)}\cdot{z}}{(y+sin{(zw)})^2}
+\end{align}$$
+
+## Implicit Derivatives(음함수의 미분)
+
+* Take derivative for both sides
+* $x\cdot{z}, y\cdot{z}$ - apply product rule
+
+$$\begin{align}
+x^2+xz+yz^2 &= 8 \newline
+\frac{\partial}{\partial x}\left[x^2y+xz+yz^2\right] &= \frac{\partial}{\partial x}\left[8\right] \newline
+2xy + \frac{\partial}{\partial x}[x]\cdot{z} + x\cdot\frac{\partial}{\partial x}[z] + 2y\cdot{z}\cdot\frac{\partial}{\partial x}[z] &= 0 \newline
+2xy+z+x\cdot\frac{\partial z}{\partial x} + 2y\cdot z\cdot \frac{\partial z}{\partial x} &= 0 \newline
+\frac{\partial z}{\partial x}(x + 2yz) &= -2xy - z \newline
+\frac{\partial z}{\partial x} &= \frac{-2xy - z}{x+2yz}
+\end{align}$$
+
+## Higher Derivative
+$$
+f(x,y)
+\begin{cases} \displaystyle
+\frac{\partial z}{\partial x}
+\begin{cases} \displaystyle
+\frac{\partial ^2 f}{\partial x^2},\ f\_{xx},\ z\_{xx} \\\\  \\\\  
+\displaystyle
+\frac{\partial ^2 f}{\partial y \partial x},\ f\_{xy}, z\_{xy}
+\end{cases} \\\\ \\\\   
+\displaystyle
+\frac{\partial z}{\partial y}
+\begin{cases} \displaystyle
+\frac{\partial ^2 f}{\partial y^2},\ f\_{yy},\ z\_{yy} \\\\ \\\\   
+\displaystyle
+\frac{\partial ^2 f}{\partial x \partial y},\ f\_{yx},\ z\_{yx}
+\end{cases} \\\\
+\end{cases}$$
