@@ -1,7 +1,6 @@
 ---
 title: "Partial Derivatives(Derivatives of Multivariable Functions)"
 date: 2019-03-03T22:24:53-05:00
-draft: true
 ---
 
 ## Derivative
@@ -94,3 +93,19 @@ f(x,y)
 \frac{\partial ^2 f}{\partial x \partial y},\ f\_{yx},\ z\_{yx}
 \end{cases} \\\\
 \end{cases}$$
+
+### Ex 1
+$$\begin{align}
+f(x,y) &= x\sin^2 y+y^2\cos{x}\ f\_{xy},f\_{yx} \newline
+f\_{x} &= \sin^2 y - y^2\sin{x} \newline
+f\_{xy} &= 2\sin{y}\cdot\cos{y} - 2y\sin{x} \newline
+f\_{y} &= 2x\sin{y}\cdot\cos{y}+2y\cos{x} \newline
+f\_{yx} &= 2\sin{y}\cdot\cos{y} - 2y\sin{x}
+\end{align}$$
+
+* Any function that is continuous on a region, Mixed partial derivatives are Equal
+
+## Laplace Equation
+$$\begin{align}
+h(x,y) \rightarrow h\_{xx} + h\_{yy} = 0
+\end{align}$$
