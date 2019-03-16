@@ -1,7 +1,6 @@
 ---
 title: "Finding differentials of multivariable functions"
 date: 2019-03-15T22:03:19-04:00
-draft: true
 ---
 
 ## Differentials
