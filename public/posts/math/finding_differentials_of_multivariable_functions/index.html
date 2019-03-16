@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Titanic // Playground</title>
+    <title>Finding differentials of multivariable functions // Playground</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-        <meta property="og:title" content="Titanic" />
+        <meta property="og:title" content="Finding differentials of multivariable functions" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://seanmoon80.github.io/posts/data-science/titanic/" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/finding_differentials_of_multivariable_functions/" />
     
 
     <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
@@ -70,11 +70,11 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Titanic</h1>
+            <h1 class="article-title" itemprop="name">Finding differentials of multivariable functions</h1>
         </header>
         
         <div class="article-meta">
-            <a href="/posts/data-science/titanic/" class="article-date">
+            <a href="/posts/math/finding_differentials_of_multivariable_functions/" class="article-date">
                 <time datetime='' itemprop="datePublished"></time>
             </a>
             
@@ -83,9 +83,75 @@
         </div>
         <div class="article-entry" itemprop="articleBody">
             
+
+<h2 id="differentials">Differentials</h2>
+
+<ul>
+<li>$\Delta y$ Gives the total change in height from $x$ to $x + \Delta x$</li>
+<li>$dy$ Gives the change in height from &ldquo;p&rdquo; to a point on the tangent line at $ x + \Delta x$<br /></li>
+<li>$\Delta y \ne dy$ But As $\Delta x$ Gets really small($\Delta x$ to 0) then $\Delta y \approx dy$</li>
+</ul>
+
+<p>$\Delta{y} = $ Increment<br />
+$dy = $ Differential<br />
+$\Delta{x} = dx,\ \Delta{y} \ne dy$<br />
+$f\prime(x) = \frac{dy}{dx}$<br />
+$dy = f\prime(x)dx$</p>
+
+<h3 id="for-r-3-surface">For R-3 Surface</h3>
+
+<ul>
+<li>Given a surface from &ldquo;P&rdquo; to &ldquo;Q&rdquo; and a Tangent Plane at &ldquo;p&rdquo;</li>
+<li>$\Delta z$ is the Actual change from &ldquo;P&rdquo; to &ldquo;Q&rdquo; (x,y) to ($x + \Delta{x},\ y + \Delta{y}$)</li>
+<li>$dz$ is the change in height from &ldquo;P&rdquo; to a point on the tangent plane at ($x + \Delta{x},\ y + \Delta{y}$)</li>
+</ul>
+
+<p>$\Delta{z} = \Delta{z_x} + \Delta{z_y}$<br />
+$\Delta{z_x} \approx dz_x = f_xdx$<br />
+$\Delta{z_y} \approx dz_y = f_ydy$<br />
+$\Delta{z} \approx dz_x + dz_y = f_xdx + f_ydy$<br />
+$\Delta{z} \approx dz = f_xdx + f_ydy</p>
+
+<h3 id="example-1">Example 1</h3>
+
+<p>Find diff of $z = ye^{x^2-y^2}$<br />
+$f_x = 2xye^{x^2-y^2}$<br />
+$f_y = e^{x^2-y^2} - 2y^2e^{x^2-y^2} = (1-2y^2)e^{x^2-y^2}$<br />
+$dz = 2xye^{x^2-y^2}dx + (1-2y^2)e^{x^2-y^2}dy$</p>
+
+<h3 id="example-2">Example 2</h3>
+
+<p>$f(x,y,z) = \ln(2x-y)+e^{2xz}$, Find df<br />
+$f_x = \frac{2}{2x-y} + 2ze^{2xz}$<br />
+$f_y = \frac{-1}{2x-y}$<br />
+$f_z = 2xe^{2xz}$<br />
+$df = (\frac{2}{2x-y} + 2ze^{2xz})dx - \frac{1}{2x-y}dy + 2xe^{2xz}dz$</p>
+
+<p>Approx  change from (2,3,0) -&gt; (2.01,2.97,0.04)</p>
+
+<p>$df = (\frac{2}{2\cdot2 - 3} + 2\cdot0e^{2x0})(0.01) - \frac{1}{2\cdot2 - 3}(-0.03) + 2\cdot2e^{2\cdot2\cdot0}(0.04)$<br />
+$\Delta{f} \approx 0.21$</p>
+
         </div>
 
         
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#differentials">Differentials</a>
+<ul>
+<li><a href="#for-r-3-surface">For R-3 Surface</a></li>
+<li><a href="#example-1">Example 1</a></li>
+<li><a href="#example-2">Example 2</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
         
         
 
@@ -96,15 +162,9 @@
     </div>
     <nav id="article-nav">
     
-    <a href="/posts/math/finding_differentials_of_multivariable_functions/" id="article-nav-newer" class="article-nav-link-wrap">
-        <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            Finding differentials of multivariable functions
-        </div>
-    </a>
     
-    
-    <a href="/posts/math/partial_derivatives/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">Partial Derivatives(Derivatives of Multivariable Functions)&nbsp;<span>&gt;</span></div>
+    <a href="/posts/data-science/titanic/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Titanic&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>
