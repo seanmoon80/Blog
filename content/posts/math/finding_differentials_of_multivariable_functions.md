@@ -23,7 +23,7 @@ $\Delta{z} = \Delta{z_x} + \Delta{z_y}$
 $\Delta{z_x} \approx dz_x = f_xdx$  
 $\Delta{z_y} \approx dz_y = f_ydy$  
 $\Delta{z} \approx dz_x + dz_y = f_xdx + f_ydy$  
-$\Delta{z} \approx dz = f_xdx + f_ydy
+$\Delta{z} \approx dz = f_xdx + f_ydy$
 
 ### Example 1
 Find diff of $z = ye^{x^2-y^2}$  
