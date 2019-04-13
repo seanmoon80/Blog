@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Limits and continuity of multivariable functions // Playground</title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="Limits and continuity of multivariable functions" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://seanmoon80.github.io/posts/math/limits_and_continuity_of_multivariable_functions/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="Playground" />
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <link href="https://seanmoon80.github.io/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="https://seanmoon80.github.io/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://seanmoon80.github.io/css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.52" />
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+             extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="https://seanmoon80.github.io/">Playground</a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="/posts/">Posts</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">Limits and continuity of multivariable functions</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="/posts/math/limits_and_continuity_of_multivariable_functions/" class="article-date">
+                <time datetime='' itemprop="datePublished"></time>
+            </a>
+            
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<h2 id="limits">Limits</h2>
+
+<p>In 2-D, There are only two path to approach to some point &lsquo;a&rsquo;.<br />
+Therefore, Limit does exist if thoes two path approaching to same
+value</p>
+
+<p>2차원상에서 특정한 점 &lsquo;a&rsquo;로 접근하는 경로는 2개밖에 없으므로<br />
+좌극한과 우극한의 값이 동일할 경우 극한값 존재</p>
+
+<p>$$
+\lim_{x \to a}f(x) = L  \\<br />
+\lim_{a \to a^-}f(x) = \lim_{a \to a^+}f(x)
+$$</p>
+
+<p>In 3-D, There are infinity number of path exist
+to apprach to some point &lsquo;a&rsquo;</p>
+
+<p>3차원상에서 특정한 점 &lsquo;a&rsquo; 와 &lsquo;b&rsquo;로 접근하는 경로는 무한개 존재</p>
+
+<h3 id="how-to-find-limit">How to find Limit</h3>
+
+<ol>
+<li>Squeeze Theorem (샌드위치 정리)</li>
+<li>Continuity of function (함수의 연속성)</li>
+<li>Find 2 path to show limit doesn&rsquo;t exist</li>
+</ol>
+
+<h3 id="dne-does-not-exist-example">DNE(Does Not Exist) Example</h3>
+
+<h4 id="step-1">Step 1</h4>
+
+<p>Set $x = 0$. So, we can travel along the surface directly over
+&lsquo;y-Axis&rsquo;
+$$
+\lim_{(x,y) \to (0,0)}\frac{x^2 - y^2}{2x^2+y^2} \\<br />
+\text{when x = 0} \rightarrow \lim_{y \to 0}\frac{0^2 - y^2}{0 + y^2} = -1 \\<br />
+\text{when y = 0} \rightarrow \lim_{x \to 0}\frac{x^2 - 0}{2x^2 - 0} = \frac{1}{2} \\<br />
+-1 \ne \frac{1}{2}\ \text{Therefore, limit does not exist at } (0,0)
+$$</p>
+
+<h4 id="step-2">Step 2</h4>
+
+<p>If Step1 doesn&rsquo;t work.<br />
+1. Pick another path which contains the point (a, b)<br />
+2. Try to substitute so degrees of numer and denom are equal.(분모분자 약분가능)<br />
+3. Always use either x = 0 or y = 0 as 1 Path<br />
+$$
+\lim_{(x,y) \to (0,0)}\frac{3xy}{3x^2+y^2} \\<br />
+x = 0 \rightarrow 0,\ y = 0 \rightarrow 0
+$$</p>
+
+<p>Set $y = f(x)$ or $x = f(y)$ Make it sure path contains the point (a,b)<br />
+$$
+y = x \rightarrow \lim_{x \to 0}\frac{3x^2}{4x^2} = \frac{3}{4} \\<br />
+0 \ne \frac{3}{4}\, \text{Therefore, Limit does not exist.}
+$$</p>
+
+<p>$$
+\lim_{(x,y) \to (1,0)}\frac{2xy - 2y}{x^2+y^2-2x+1} \\<br />
+y = 0 \rightarrow \lim_{x \to 1}\frac{0}{x^2-2x+1} = 0 \\<br />
+x = 1 \rightarrow \lim_{y \to 0}\frac{2y-2y}{y^2} = 0 \\<br />
+\lim_{(x,y) \to (1,0)}\frac{2y(x-1)}{y^2+(x-1)^2} \<br />
+x-1 = y \rightarrow \lim_{y \to 0}\frac{2y\cdot y}{y^2+y^2} = 1
+$$</p>
+
+<ol>
+<li>For 3-var, Paths are now Parametric &ldquo;t&rdquo;<br /></li>
+<li>Always choose an AXIS as 1st path
+$$
+\lim_{(x,y,z) \to (0,0,0)}\frac{xy+yz+xz}{x^2+y^2+z^2} \\<br />
+\text{Along X-Axis} (y = 0, z = 0) \rightarrow \lim_{x \to 0}\frac{0}{x^2} = 0 \\<br />
+\text{Along C:} x = t, y = t, z = t \rightarrow \frac{3t^2}{3t^2} = 1
+$$</li>
+</ol>
+
+<h3 id="continuity">Continuity</h3>
+
+<p>a Function continuous at any point inside its domain<br />
+1. Polynomial continuous everywhere<br />
+2. Rational function continuous everywhere where denom $\ne 0$<br />
+3. Continuity holds for compositions.</p>
+
+<h4 id="continuity-example">Continuity Example</h4>
+
+<h5 id="ex1">EX1</h5>
+
+<p>$$
+f(x,y) = \frac{x^3+xy+y^3}{x^2+y^2} \\<br />
+\text{Doman :}\{ (x,y)|(x,y) \ne (0,0) \} \\<br />
+$$</p>
+
+<h5 id="ex2">EX2</h5>
+
+<p>$$
+f(x,y,z) = \frac{xyz}{x^2+y^2+z^2+4} \\<br />
+\text{Domain :}\{ (x,y,z) | x^2+y^2+z^2 \ne 4 \}
+$$</p>
+
+<h5 id="ex3">EX3</h5>
+
+<p>$$\begin{align}
+f(x,y) &amp;= x^2 + xy + y^2 \\<br />
+g(t) &amp;= t\cos{t} + \sin{t} \\<br />
+f(x) &amp;\rightarrow \text{Continuous on All }(x,y) \\<br />
+g(t) &amp;\rightarrow \text{Continuous on All }&rsquo;t&rsquo; \\<br />
+h(x,y) = g(f(x,y)) &amp;\rightarrow \text{Continuous on everywhere}
+\end{align}$$</p>
+
+<h5 id="ex4">EX4</h5>
+
+<p>$$\begin{align}
+f(x,y) &amp;= x-2y+3 \\<br />
+g(t) &amp;= \sqrt{t} + \frac{1}{t} \\<br />
+f(x,y) &amp;\rightarrow \text{Continuous on All }(x,y) \\<br />
+g(t) &amp;\rightarrow \text{Continuous on }\{t|t &gt; 0\} \\<br />
+h(x,y) = g(f(x,y)) &amp;\rightarrow \text{Continuous on }\{(x,y)|x-2y &gt; -3\}
+\end{align}$$</p>
+
+<h3 id="squeeze-theorem">Squeeze theorem</h3>
+
+<p>$$\begin{align}
+&amp;\lim_{(x,y) \to (0,0)}\frac{5x^2y}{x^2+y^2} \\<br />
+\frac{5x^2y}{x^2+y^2} &amp;\rightarrow \left|\frac{5x^2y}{x^2+y^2}\right| = \frac{5x^2|y|}{x^2+y^2}\\<br />
+\frac{5x^2}{x^2} = 5 &amp;\rightarrow \frac{5x^2}{x^2+y^2} \le 5 \rightarrow \frac{5x^2|y|}{x^2+y^2} \le 5|y| \\<br />
+0 \le \frac{5x^2|y|}{x^2+y^2} \le 5|y| &amp;\rightarrow \lim_{(x,y)\to (0,0)} 0 = 0 \le \lim_{(x,y)\to (0,0)}\frac{5x^2|y|}{x^2+y^2} \le \lim_{(x,y) \to (0,0)}5|y|
+\end{align}$$</p>
+
+        </div>
+
+        
+        
+        <div class="article-toc" >
+            <h3>Contents</h3>
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#limits">Limits</a>
+<ul>
+<li><a href="#how-to-find-limit">How to find Limit</a></li>
+<li><a href="#dne-does-not-exist-example">DNE(Does Not Exist) Example</a>
+<ul>
+<li><a href="#step-1">Step 1</a></li>
+<li><a href="#step-2">Step 2</a></li>
+</ul></li>
+<li><a href="#continuity">Continuity</a>
+<ul>
+<li><a href="#continuity-example">Continuity Example</a>
+<ul>
+<li><a href="#ex1">EX1</a></li>
+<li><a href="#ex2">EX2</a></li>
+<li><a href="#ex3">EX3</a></li>
+<li><a href="#ex4">EX4</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#squeeze-theorem">Squeeze theorem</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+        </div>
+        
+        
+
+        
+
+
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="/posts/math/partial_derivatives/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            Partial Derivatives(Derivatives of Multivariable Functions)
+        </div>
+    </a>
+    
+    
+    <a href="/posts/math/intro_to_multivariable_functions/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Intro to Multivariable Functions&nbsp;<span>&gt;</span></div>
+    </a>
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2019 Playground&nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+</footer>
+</div>
+</body>
+</html>

@@ -71,6 +71,104 @@
                 
                 
                 <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/posts/math/tnb_frame/">TNB Frame(Frenet-Serret Frame)</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/posts/math/tnb_frame/" class="article-date">
+                        <time datetime='2019-02-02T09:38:47.000-05:00' itemprop="datePublished">2019-02-02</time>
+                    </a>
+                    
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    Definition Unlikely IJK frame, it is moving through the curve.
+To descirbe motion of particles travling along the curve
+T - $\vec{T}$ Unit Tangent Vector. Direction particle is heading.
+N - $\vec{N}$ Normal Vector. Direction particle is turning.
+B - $\vec{B}$ Binormal Vector. Direction of particle&rsquo;s twisting
+How to find TNB $\vec{T}$: Unit Tangent $$\begin{align}&amp;\vec{T}(s) = \vec{r}\prime(s) \text{ or } \vec{T}(t) = \frac{\vec{r}\prime(t)}{||\vec{r}\prime(t)||}\end{align}$$ $\vec{N}$: Unit Normal $$\begin{align} &amp;\vec{N}(t) = \frac{\vec{T}\prime(t)}{||\vec{T}\prime(t)||} \newline &amp;\text{Every vector with a constant length is perpendicular to it&rsquo;s Tangent vector} \newline &amp;\text{Proof: Let } \vec{v} \text{ have constant length} \newline &amp;\vec{v}\cdot\vec{v} = |\vec{v}|^2 = C^2 \newline &amp;\dfrac{d}{dt}(\vec{v}\cdot\vec{v}) = \dfrac{d}{dt}(C^2) \newline &amp;\vec{v}\prime\cdot\vec{v} + \vec{v}\cdot\vec{v}\prime = 2(\vec{v}\prime\cdot\vec{v}) = 0 \newline &amp;\text{So } \vec{T}(t) \perp \vec{T}\prime(t) \end{align}$$ $\vec{B}$: Unit Binormal $$\vec{B} = \vec{T} \times \vec{N}$$
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/posts/math/tnb_frame/">Read More</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/posts/math/arc_length_and_parameterlization_tnb/">Arc Length and Parameterlization</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/posts/math/arc_length_and_parameterlization_tnb/" class="article-date">
+                        <time datetime='2019-01-30T22:19:46.000-05:00' itemprop="datePublished">2019-01-30</time>
+                    </a>
+                    
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    Arc Length $$\begin{align} L = \int_a^b \sqrt{(f&rsquo;(t))^2 + (g&rsquo;(t))^2}\, dt \end{align}$$
+ Lectur 5.4
+ Reference
+ Stewart Calculus 7th Edition Chapter 10.2(P645)  For 3-D $$\begin{align} L &amp;= \int_a^b \sqrt{(f&rsquo;(t))^2 + (g&rsquo;(t))^2 + (h&rsquo;(t))^2}\, dt \newline\newline \vec{r}(t) &amp;= f(t)\hat i + g(t)\hat j + h(t)\hat k \newline\newline \vec{r}&lsquo;(t) &amp;= f&rsquo;(t)\hat i + g&rsquo;(t)\hat j + h&rsquo;(t)\hat k \newline\newline |\vec{r}&lsquo;(t)| &amp;= \sqrt{(f&rsquo;(t))^2 + (g&rsquo;(t))^2 + (h&rsquo;(t))^2} \newline\newline L &amp;= \int_a^b |\vec{r}&lsquo;(t)|\, dt \end{align}$$
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/posts/math/arc_length_and_parameterlization_tnb/">Read More</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/posts/math/derivatives_and_integrals_of_vector_functions/">Derivatives and Integrals of Vector Functions</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/posts/math/derivatives_and_integrals_of_vector_functions/" class="article-date">
+                        <time datetime='2019-01-25T14:22:59.000-05:00' itemprop="datePublished">2019-01-25</time>
+                    </a>
+                    
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    Derivatives $$\begin{align} f\prime(x) &amp;= \lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x} \newline\newline \vec{r}\prime(t) &amp;= \lim_{\Delta t \to 0}\frac{\vec{r}(t + \Delta t) - \vec{r}(t)}{\Delta t} \newline &amp;= \lim_{\Delta t \to 0}\frac{(f(t + \Delta t)\hat i + g(t + \Delta t)\hat j + h(t + \Delta t)\hat k) - (f(t)\hat i + g(t)\hat j + h(t)\hat k)}{\Delta t} \newline &amp;= \lim_{\Delta t \to 0}\frac{f(t + \Delta t) - f(t)}{\Delta t}\hat i + \lim_{\Delta t \to 0}\frac{g(t + \Delta t) - g(t)}{\Delta t}\hat j + \lim_{\Delta t \to 0}\frac{h(t + \Delta t) - h(t)}{\Delta t}\hat k \newline &amp;= f\prime(t)\hat i + g\prime(t)\hat j + h\prime(t)\hat k \end{align}$$
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/posts/math/derivatives_and_integrals_of_vector_functions/">Read More</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
                     <h1 itemprop="name"><a class="article-title" href="/posts/math/vector_function/">Vector Function</a></h1>
                 </header>
                 
