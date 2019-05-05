@@ -1,7 +1,6 @@
 ---
 title: "Constrained Optimization with LaGrange Multipliers"
 date: 2019-04-18T13:12:26-04:00
-draft: true
 ---
 
 ## Example 1
