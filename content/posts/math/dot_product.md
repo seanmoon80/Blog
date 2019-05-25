@@ -1,7 +1,6 @@
 ---
 title: "The Dot Product"
 date: 2019-05-17T22:29:39-04:00
-draft: true
 ---
 
 $$\begin{align}
