@@ -71,6 +71,135 @@
                 
                 
                 <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/posts/math/tnb_frame/">TNB Frame(Frenet-Serret Frame)</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/posts/math/tnb_frame/" class="article-date">
+                        <time datetime='2019-02-02T09:38:47.000-05:00' itemprop="datePublished">2019-02-02</time>
+                    </a>
+                    
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    Definition Unlikely IJK frame, it is moving through the curve.
+To descirbe motion of particles travling along the curve
+T - $\vec{T}$ Unit Tangent Vector. Direction particle is heading.
+N - $\vec{N}$ Normal Vector. Direction particle is turning.
+B - $\vec{B}$ Binormal Vector. Direction of particle&rsquo;s twisting
+How to find TNB $\vec{T}$: Unit Tangent $$\begin{align}&amp;\vec{T}(s) = \vec{r}\prime(s) \text{ or } \vec{T}(t) = \frac{\vec{r}\prime(t)}{||\vec{r}\prime(t)||}\end{align}$$ $\vec{N}$: Unit Normal $$\begin{align} &amp;\vec{N}(t) = \frac{\vec{T}\prime(t)}{||\vec{T}\prime(t)||} \newline &amp;\text{Every vector with a constant length is perpendicular to it&rsquo;s Tangent vector} \newline &amp;\text{Proof: Let } \vec{v} \text{ have constant length} \newline &amp;\vec{v}\cdot\vec{v} = |\vec{v}|^2 = C^2 \newline &amp;\dfrac{d}{dt}(\vec{v}\cdot\vec{v}) = \dfrac{d}{dt}(C^2) \newline &amp;\vec{v}\prime\cdot\vec{v} + \vec{v}\cdot\vec{v}\prime = 2(\vec{v}\prime\cdot\vec{v}) = 0 \newline &amp;\text{So } \vec{T}(t) \perp \vec{T}\prime(t) \end{align}$$ $\vec{B}$: Unit Binormal $$\vec{B} = \vec{T} \times \vec{N}$$
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/posts/math/tnb_frame/">Read More</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/posts/math/derivatives_and_integrals_of_vector_functions/">Derivatives and Integrals of Vector Functions</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/posts/math/derivatives_and_integrals_of_vector_functions/" class="article-date">
+                        <time datetime='2019-01-25T14:22:59.000-05:00' itemprop="datePublished">2019-01-25</time>
+                    </a>
+                    
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    Derivatives $$\begin{align} f\prime(x) &amp;= \lim_{\Delta x \to 0}\frac{f(x + \Delta x) - f(x)}{\Delta x} \newline\newline \vec{r}\prime(t) &amp;= \lim_{\Delta t \to 0}\frac{\vec{r}(t + \Delta t) - \vec{r}(t)}{\Delta t} \newline &amp;= \lim_{\Delta t \to 0}\frac{(f(t + \Delta t)\hat i + g(t + \Delta t)\hat j + h(t + \Delta t)\hat k) - (f(t)\hat i + g(t)\hat j + h(t)\hat k)}{\Delta t} \newline &amp;= \lim_{\Delta t \to 0}\frac{f(t + \Delta t) - f(t)}{\Delta t}\hat i + \lim_{\Delta t \to 0}\frac{g(t + \Delta t) - g(t)}{\Delta t}\hat j + \lim_{\Delta t \to 0}\frac{h(t + \Delta t) - h(t)}{\Delta t}\hat k \newline &amp;= f\prime(t)\hat i + g\prime(t)\hat j + h\prime(t)\hat k \end{align}$$
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/posts/math/derivatives_and_integrals_of_vector_functions/">Read More</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/posts/math/vector_function/">Vector Function</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/posts/math/vector_function/" class="article-date">
+                        <time datetime='2019-01-16T21:45:14.000-05:00' itemprop="datePublished">2019-01-16</time>
+                    </a>
+                    
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    Definition  실수 집합을 정의역으로 가지며 벡터의 집합을 치역으로 가지는 함수 그러한 함수를 $r$이라하고 $r$의 정의역의 어떤 수 $t$에 대한 유일한 벡터 $V_3$가 있을 경우 $r(t)$로 표기할수 있다. $$\begin{align} &amp;A = \{ t \mid t \in \mathbb{R} \}, B = \{\left&lt; x,y,z \right&gt; \mid x,y,z \in \mathbb{R} \} \newline &amp;\vec r : A\rightarrow B \end{align}$$ $r(t)$의 component가 $f(t),\ g(t), h(t)$로 표현될 경우 $f, g, h$는 $r$의 component functions이라 부를수 있고 $$r(t) = \left&lt; f(t),g(t),h(t) \right&gt; = f(t)i + g(t)j + h(t)k$$ $t$는 독립변수로서 일반적으로 시간을 나타냄 치역의 벡터들의 종점은 삼차원상에서 Curve의 자취를 나타냄  Example $$\begin{align} \vec r(t) = \left&lt;\sqrt{t}, \frac{1}{t-1},\ln{t}\right&gt; \newline \underbrace{x = \sqrt{t}}_{t \ge 0},\ \underbrace{y = \frac{1}{t-1}}_{t \ne 1},\ \underbrace{z = \ln{t}}_{t \gt 0} \newline \text{Common Domain}: 0 \lt t \lt 1, 1 \lt t \newline\newline t = 2: \vec r(2) = \left&lt;\sqrt{2},1,\ln2\right&gt;\newline t = 4: \vec r(4) = \left\end{align}$$
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/posts/math/vector_function/">Read More</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
+                    <h1 itemprop="name"><a class="article-title" href="/posts/math/cylindrical_and_spherical_coordinates/">Cylindrical and Spherical coordinates</a></h1>
+                </header>
+                
+                <div class="article-meta">
+                    <a href="/posts/math/cylindrical_and_spherical_coordinates/" class="article-date">
+                        <time datetime='2019-01-08T17:12:06.000-05:00' itemprop="datePublished">2019-01-08</time>
+                    </a>
+                    
+                    
+                    
+                </div>
+                <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        
+                    Polar coordinate system(극좌표계) * 평면위의 위치를 각도($\theta$)와 거리($r$)로 표현
+Cylindrical coordinate system(원통좌표계) $$(x, y, z) \implies (r, \theta, z)$$ * &lsquo;r&rsquo;은 3차원 공간상에서 원점에서부터 점까지의 거리가 아님.
+* &lsquo;r&rsquo;은 xy 평면에 투사된 점까지의 거리
+* xy평면에 투영시 팔분면에서의 위치를 사분면의 위치로 투영.
+Rectangular coordinate system(직교좌표계)과의 관계 $$\begin{align} Cyl \xrightarrow\ Rec\ &amp;\begin{cases} \cos\theta = \frac{x}{r} \implies x = r\cos\theta \newline \sin\theta = \frac{y}{r} \implies y = r\sin\theta \newline z = z \end{cases} \newline Rec \xrightarrow\ Cyl\ &amp;\begin{cases} r^2 = x^2 + y^2 \implies r = \sqrt{x^2 + y^2} \newline \tan\theta = \frac{y}{x} \newline z = z \end{cases} \end{align}$$
+                    </p>
+                    <p class="article-more-link">
+                        <a href="/posts/math/cylindrical_and_spherical_coordinates/">Read More</a>
+                    </p>
+                </div>
+
+                
+            </div>
+        </article>
+        
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+            <div class="article-inner">
+                
+                
+                <header class="article-header">
                     <h1 itemprop="name"><a class="article-title" href="/posts/math/cylinders_and_surfaces_in_3d/">Cylinders and surfaces in 3d</a></h1>
                 </header>
                 
