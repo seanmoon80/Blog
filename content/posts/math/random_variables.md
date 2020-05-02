@@ -17,7 +17,7 @@ $
 * Idicator r.v. of an event A: $I\_A = 1$ iff A occurs  
 * $P\_{I\_A}(1) = P(I_A = 1) = P(A)$
 
-## Discret uniform random variable
+## Discrete uniform random variable
 Parameters $a, b$  
   
 * Parameters: integers <span style="color:red">**$a, b; a \le b$**</span>  
