@@ -4,7 +4,7 @@ date: 2020-05-01T22:15:21-04:00
 ---
 
 ## Bernoulli Random Variables
-Bernoulli with parametr $p \in [0, 1]$  
+Bernoulli with parameter $p \in [0, 1]$  
 $X = 
 \begin{cases}
 1, p \newline  
