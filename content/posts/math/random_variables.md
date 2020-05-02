@@ -23,7 +23,7 @@ Parameters $a, b$
 * Parameters: integers <span style="color:red">**$a, b; a \le b$**</span>  
 * Experiment: $a, a + 1,...,b$ randomly pick one; all equally likely  
 * Sample space: ${a,a+1,...,b}$ ($b-a+1$ Possible values)  
-* Random variable $X: X(w) = w$
+* Random variable $X: X(w) = w$  
 * Special case: $a = b$ (constant/deterministci r.v)
 
 ## Binomial random variable
