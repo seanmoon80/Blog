@@ -6,10 +6,28 @@
     <description>Recent content in Posts on Playground</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Jul 2019 10:06:16 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 22:15:21 -0400</lastBuildDate>
     
 	<atom:link href="https://seanmoon80.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Random variables</title>
+      <link>https://seanmoon80.github.io/posts/math/random_variables/</link>
+      <pubDate>Fri, 01 May 2020 22:15:21 -0400</pubDate>
+      
+      <guid>https://seanmoon80.github.io/posts/math/random_variables/</guid>
+      <description>Bernoulli Random Variables Bernoulli with parametr $p \in [0, 1]$
+$X = \begin{cases} 1, p \newline
+0, 1 - p \end{cases} $
+* Either Success or failure
+* Either Heads or Tails
+* Idicator r.v. of an event A: $I_A = 1$ iff A occurs
+* $P_{I_A}(1) = P(I_A = 1) = P(A)$
+Descret uniform random variable Parameters $a, b$
+* Parameters: integers $a, b; a \le b$
+* Experiment: $a, a + 1,&amp;hellip;,b$ randomly pick one; all equally likely</description>
+    </item>
     
     <item>
       <title>Varieties of solutions of linear systems and the determinant</title>
