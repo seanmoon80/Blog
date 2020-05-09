@@ -15,7 +15,7 @@ Experiment: Play poker game with A,B and C in any order
   
 Event: More than 2 consecutive wins  
   
-Given Probability: $P(A) = 0.8, P(A^c) = 0.2, P(B) = 0.5, P(B^c) = 0.5, P(C) = 0.1, P(C^c) = 0.9$  
+Given Probability: $P(A) = 0.8, P(A^c) = 0.2, P(B) = 0.5, P(B^c) = 0.5, P({C}) = 0.1, P(C^c) = 0.9$  
   
 Sample Space: $\\{ABC, ABC^c, AB^cC, AB^cC^c, A^cBC, A^cBC^c, A^cB^cC, A^cB^cC^c,..., C^cA^cB^c\\}$  
   
